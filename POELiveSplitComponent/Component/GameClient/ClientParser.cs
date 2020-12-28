@@ -11,7 +11,7 @@ namespace POELiveSplitComponent.Component.GameClient
 
         private static readonly Regex ZONE_NAME = new Regex(TIMESTAMP_SECTION + @".*You have entered (.*)\.$");
 
-        private static readonly Regex LEVEL_UP = new Regex(TIMESTAMP_SECTION + @".* is now level (\d+)$");
+        private static readonly Regex LEVEL_UP = new Regex(TIMESTAMP_SECTION + @".* 님이 (\d+)$");
 
         private static readonly Regex IZARO_DIALOGUE = new Regex(TIMESTAMP_SECTION + @".*Izaro: (.*)");
 
