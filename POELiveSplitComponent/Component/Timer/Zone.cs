@@ -27,8 +27,8 @@ namespace POELiveSplitComponent.Component.Timer
             Zone act9Home = new Zone("Highgate", 2);
             Zone act10Home = new Zone("Oriath Docks", 2);
 
-            add(new Zone("Lioneye's Watch", 1), IconType.Town);
-            add(new Zone("The Coast", 1), IconType.Wp);
+            add(new Zone("라이온아이 초소", 1), IconType.Town);
+            add(new Zone("해안 지대", 1), IconType.Wp);
             add(new Zone("The Tidal Island", 1), IconType.NoWp);
             add(new Zone("The Mud Flats", 1), IconType.NoWp);
             add(new Zone("The Submerged Passage", 1), IconType.Wp);
