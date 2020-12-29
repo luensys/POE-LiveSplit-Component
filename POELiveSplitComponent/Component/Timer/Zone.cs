@@ -18,7 +18,7 @@ namespace POELiveSplitComponent.Component.Timer
             REQUIRED = new Dictionary<Zone, Zone>();
             ICONTYPES = new Dictionary<IZone, IconType>();
 
-            Zone kitavaPart1Kill = new Zone("The Cathedral Rooftop", 1);
+            Zone kitavaPart1Kill = new Zone("대성당 옥상", 1);
             Zone act6Home = new Zone("라이온아이 초소", 2);
             Zone act7Home = new Zone("다리 야영지", 2);
             Zone sarnRamparts = new Zone("사안 성벽", 2);
@@ -29,11 +29,11 @@ namespace POELiveSplitComponent.Component.Timer
 
             add(new Zone("라이온아이 초소", 1), IconType.Town);
             add(new Zone("해안 지대", 1), IconType.Wp);
-            add(new Zone("물결섬", 1), IconType.NoWp);
+            add(new Zone("물결 섬", 1), IconType.NoWp);
             add(new Zone("갯벌", 1), IconType.NoWp);
             add(new Zone("물에 잠긴 길", 1), IconType.Wp);
             add(new Zone("물에 잠긴 심연", 1), IconType.NoWp);
-            add(new Zone("바위턱", 1), IconType.Wp);
+            add(new Zone("바위 턱", 1), IconType.Wp);
             add(new Zone("고개", 1), IconType.Wp);
             add(new Zone("수용소 하층", 1), IconType.Wp);
             add(new Zone("수용소 상층", 1), IconType.NoWp);
@@ -46,7 +46,7 @@ namespace POELiveSplitComponent.Component.Timer
             add(new Zone("숲 야영지", 1), IconType.Town);
             add(new Zone("강변길", 1), IconType.Wp);
             add(new Zone("서쪽 숲", 1), IconType.Wp);
-            add(new Zone("거미의 둥지", 1), IconType.NoWp);
+            add(new Zone("거미의 방", 1), IconType.NoWp);
             add(new Zone("버려진 경작지", 1), IconType.NoWp);
             add(new Zone("갈림길", 1), IconType.Wp);
             add(new Zone("죄악의 방 1층", 1), IconType.Wp);
@@ -67,8 +67,8 @@ namespace POELiveSplitComponent.Component.Timer
             add(new Zone("지하묘지", 1), IconType.NoWp);
             add(new Zone("전쟁터", 1), IconType.Wp);
             add(new Zone("항구", 1), IconType.Wp);
-            add(new Zone("솔라리스의 사원 1층", 1), IconType.Wp);
-            add(new Zone("솔라리스의 사원 2층", 1), IconType.Wp);
+            add(new Zone("솔라리스 사원 1층", 1), IconType.Wp);
+            add(new Zone("솔라리스 사원 2층", 1), IconType.Wp);
             add(new Zone("칠흑의 군단 주둔지", 1), IconType.Wp);
             add(new Zone("루나리스 사원 1층", 1), IconType.Wp);
             add(new Zone("루나리스 사원 2층", 1), IconType.NoWp);
@@ -100,12 +100,11 @@ namespace POELiveSplitComponent.Component.Timer
             add(new Zone("멸망한 광장", 1), IconType.Wp);
             add(new Zone("납골당", 1), IconType.NoWp);
             add(new Zone("성유물 보관실", 1), IconType.Wp);
-            add(new Zone("대성당 옥상", 1), IconType.NoWp);
             add(kitavaPart1Kill, IconType.Wp);
             add(act6Home, IconType.Town, kitavaPart1Kill);
             add(new Zone("황혼의 해안", 2), IconType.NoWp, act6Home);
-            add(new Zone("해안지대", 2), IconType.Wp, act6Home);
-            add(new Zone("The Mud Flats", 2), IconType.NoWp, act6Home);
+            add(new Zone("해안 지대", 2), IconType.Wp, act6Home);
+            add(new Zone("갯벌", 2), IconType.NoWp, act6Home);
             add(new Zone("카루이 요새", 2), IconType.NoWp, act6Home);
             add(new Zone("산등성이", 2), IconType.Wp, act6Home);
             add(new Zone("수용소 하층", 2), IconType.Wp, act6Home);
@@ -140,6 +139,7 @@ namespace POELiveSplitComponent.Component.Timer
             add(new Zone("도이드리의 정화조", 2), IconType.Wp, act8Home);
             add(new Zone("부두", 2), IconType.NoWp, act8Home);
             add(new Zone("곡물의 문", 2), IconType.Wp, act8Home);
+            add(new Zone("대 산책로", 2), IconType.NoWp, act8Home);
             add(new Zone("황실 정원", 2), IconType.Wp, act8Home);
             add(new Zone("솔라리스 사원 1층", 2), IconType.Wp, act8Home);
             add(new Zone("솔라리스 사원 2층", 2), IconType.NoWp, act8Home);
@@ -163,10 +163,10 @@ namespace POELiveSplitComponent.Component.Timer
             add(new Zone("짐승의 소굴", 2), IconType.NoWp, act9Home);
             add(new Zone("썩어가는 중심부", 2), IconType.NoWp, act9Home);
             add(act10Home, IconType.Town);
-            add(new Zone("대성당 꼭대기", 2), IconType.NoWp, act10Home);
+            add(new Zone("대성당 옥상", 2), IconType.NoWp, act10Home);
             add(new Zone("파괴된 광장", 2), IconType.Wp, act10Home);
             add(new Zone("관리 구역", 2), IconType.Wp, act10Home);
-            add(new Zone("불타버린 법정", 2), IconType.NoWp, act10Home);
+            add(new Zone("타오르는 법정", 2), IconType.NoWp, act10Home);
             add(new Zone("무너진 방", 2), IconType.Wp, act10Home);
             add(new Zone("납골당", 2), IconType.NoWp, act10Home);
             add(new Zone("성유물 보관실", 2), IconType.Wp, act10Home);
