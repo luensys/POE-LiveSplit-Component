@@ -9,7 +9,7 @@ namespace POELiveSplitComponent.Component.GameClient
 
         private static readonly Regex START = new Regex(TIMESTAMP_SECTION + @".*Got Instance Details");
 
-        private static readonly Regex ZONE_NAME = new Regex(TIMESTAMP_SECTION + @".*에 진입했습니다");
+        private static readonly Regex ZONE_NAME = new Regex(TIMESTAMP_SECTION + @".*: (.*)에 진입했습니다");
 
         private static readonly Regex LEVEL_UP = new Regex(TIMESTAMP_SECTION + @".* 님이 (\d+)");
 
@@ -24,6 +24,15 @@ namespace POELiveSplitComponent.Component.GameClient
 
         public void ProcessLine(string s)
         {
+            /*string source = "DemoSourceWithinApplicationLogSystem";
+            System.Diagnostics.EventLog systemEventLog = new System.Diagnostics.EventLog("System");
+            if (!System.Diagnostics.EventLog.SourceExists(source))
+            {
+                System.Diagnostics.EventLog.CreateEventSource(source, "System");
+            }
+            systemEventLog.Source = source;
+            systemEventLog.WriteEntry(s, System.Diagnostics.EventLogEntryType.Warning, 150);*/
+
             Match match = START.Match(s);
             if (match.Success)
             {
@@ -52,5 +61,6 @@ namespace POELiveSplitComponent.Component.GameClient
 
             }
         }
+
     }
 }
