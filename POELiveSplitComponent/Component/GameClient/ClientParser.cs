@@ -40,7 +40,6 @@ namespace POELiveSplitComponent.Component.GameClient
                 splitter.HandleLoadStart(long.Parse(groups[1].Value));
                 return;
             }
-            // systemEventLog.WriteEntry("start passed", System.Diagnostics.EventLogEntryType.Warning, 150);
             match = ZONE_NAME.Match(s);
             if (match.Success)
             {
@@ -48,7 +47,6 @@ namespace POELiveSplitComponent.Component.GameClient
                 splitter.HandleLoadEnd(long.Parse(groups[1].Value), groups[2].Value);
                 return;
             }
-            // systemEventLog.WriteEntry("zone passed", System.Diagnostics.EventLogEntryType.Warning, 150);
             match = LEVEL_UP.Match(s);
             if (match.Success)
             {
