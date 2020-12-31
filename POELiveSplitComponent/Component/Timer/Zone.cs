@@ -29,7 +29,6 @@ namespace POELiveSplitComponent.Component.Timer
 
             add(new Zone("라이온아이 초소", 1), IconType.Town);
             add(new Zone("해안 지대", 1), IconType.Wp);
-            add(new Zone("물결 섬", 1), IconType.NoWp);
             add(new Zone("갯벌", 1), IconType.NoWp);
             add(new Zone("물에 잠긴 길", 1), IconType.Wp);
             add(new Zone("바위 턱", 1), IconType.Wp);
